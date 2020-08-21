@@ -1,0 +1,25 @@
+td { 
+	border:1px solid #d5d5d5;
+	padding:10px;
+}
+
+.bar {
+	height:10px;
+	margin-bottom:5px;
+	width:10%;
+}
+.bar .innerGraph {
+	width:100%;
+	height:100%;
+	background:skyblue;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.bar .innerGraph.graph-bottom {
+	background:brown;
+}
+@keyframes barGraph {
+	0% { width:0; }
+	100% { width:100%; }
+}
