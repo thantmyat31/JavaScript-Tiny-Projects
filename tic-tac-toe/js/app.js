@@ -21,38 +21,38 @@ const getRand = (length) => Math.floor(Math.random() * length);
 for(let i = 0; i < components.length; i++) {
 	components[i].addEventListener('click', () => {
 		
-			if(collector[i] === '') {
-				collector[i] = 'O';
-				components[i].textContent = 'O';
+		if(collector[i] === '') {
+			collector[i] = 'O';
+			components[i].textContent = 'O';
 
-				let filters = [];
-				collector.forEach((item, index) => {
-					if(item === '') {
-						filters.push(index);
-					}
-				});
+			let filters = [];
+			collector.forEach((item, index) => {
+				if(item === '') {
+					filters.push(index);
+				}
+			});
 
-				let rand = parseInt(filters[getRand(filters.length)]);
-				
-				if(filters !== [] && components[rand]) {
-					collector[rand] = 'X' ;
-					components[rand].textContent = 'X';
-				}						
-			}
+			let rand = parseInt(filters[getRand(filters.length)]);
 			
-			winState.forEach(state => {
-				if(collector[state[0]] &&
-					collector[state[0]] === collector[state[1]] &&
-					collector[state[0]] === collector[state[2]] ) {
+			if(filters !== [] && components[rand]) {
+				collector[rand] = 'X' ;
+				components[rand].textContent = 'X';
+			}						
+		}
+		
+		winState.forEach(state => {
+			if(collector[state[0]] &&
+				collector[state[0]] === collector[state[1]] &&
+				collector[state[0]] === collector[state[2]] ) {
 
-					let result = collector[state[0]];
-					if(result === 'O') {
-						alert('you win');
-					} else {
-						alert('you lose');
-					}
-				} 
-			})
+				let result = collector[state[0]];
+				if(result === 'O') {
+					alert('you win');
+				} else {
+					alert('you lose');
+				}
+			} 
+		})
 			
 		
 	});
