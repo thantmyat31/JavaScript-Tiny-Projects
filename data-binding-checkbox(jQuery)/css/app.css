@@ -1,0 +1,48 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+.input-collect-header {
+	width:400px;
+	margin:20px auto 0;
+}
+
+.input-collect {
+	display:block;
+	width:400px;
+	margin:50px auto;
+	line-height:40px;
+	border-bottom:1px solid #bbbbbb;
+}
+
+.input-collect span {
+	display:inline-block;
+	line-height:20px;
+	padding:5px 10px;
+	background:#bbbbbb;
+	margin-right:10px;
+}
+
+.input-collect span i {
+	padding-left:10px;
+}
+
+.container {
+	width:400px;
+	margin:20px auto;
+}
+
+.container .check-collect {
+	margin-bottom:40px;
+}
+
+.container .check-collect h3 {
+	padding-bottom:15px;
+	text-decoration:underline;
+}
+
+.container .check-collect .check-place {
+	display:inline-block;
+	width:23%;
+}
