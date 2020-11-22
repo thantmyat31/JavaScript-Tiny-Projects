@@ -1,0 +1,106 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+.container {
+	max-width:750px;
+	margin:40px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding:15px;
+}
+
+.parent {
+	max-width:500px;
+}
+
+.listContainer {
+	max-width:200px;
+	margin-bottom:20px;
+}
+
+.clonebox {
+	border:1px solid #d0d0d0;
+	padding:20px;
+	margin-bottom:20px;
+}
+
+.clonebox input,
+.clonebox select {
+	width:100%;
+	border-radius: 0;
+	border:1px solid #d6d6d6;
+	text-indent:10px;
+	height: 37px;
+}
+
+.clonebox input {
+	margin-bottom: 15px;
+}
+
+.clonebox select {
+	min-width:70px;
+	width:auto;
+}
+.clonebox button {
+	border:1px solid #d6d6d6;
+	background:#d6d6d6;
+	color:#555;
+	padding:10px 30px;
+	border-radius: 0;
+	transition:0.3s;
+}
+
+.clonebox button.clone {
+	background:#11c717;
+	border-color:#11c717;
+	color:#fff;
+}
+
+.clonebox button:hover {
+	color:#ffff;
+	background:#000;
+	border-color:#000;
+}
+
+.clonebox button:focus,
+.clonebox button:active {
+	outline:none;
+}
+
+.clonebox button.clone:hover {
+	color:#11c717;
+	border-color:#11c717;
+	background:#fff;
+}
+
+.clonebox input:focus,
+.clonebox input:active,
+.clonebox select:focus,
+.clonebox select:active {
+	outline:none;
+}
+
+h4 {
+	padding-bottom:15px;
+	border-bottom:1px solid #d6d6d6;
+}
+
+.list li {
+	list-style: none;
+	padding-top:10px;
+}
+
+@media screen and (max-width:360px) {
+	select {
+		width:100% !important;
+	}
+	button {
+		display: block;
+		margin-top:10px;
+	}
+}
